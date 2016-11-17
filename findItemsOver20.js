@@ -17,4 +17,4 @@ var shoppingList = [
     { itemName : 'Cheese', price : 23.00 },
     { itemName : 'Melrose', price : 27.50 }
 ];
-console.log(findItemsOver20(shoppingList));;
+console.log(findItemsOver20(shoppingList));
