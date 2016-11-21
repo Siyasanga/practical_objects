@@ -1,4 +1,5 @@
 // determine which of their departments are the most profitable
+// Returns object madDep, which is a department with the most sales
 function mostProfitableDepartment(salesData){
   var maxSales = 0;
   var maxDep;
