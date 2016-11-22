@@ -5,6 +5,10 @@ function mostWordsEndWith(text){
   var endCount = {};
   var counter = 0;
   var char = '';
+  var result = {
+    letter: '',
+    letterCount: 0
+  };
   for(i in worldList){
     // last char of the word
     lastChar = worldList[i].substring(worldList[i].length -1);
@@ -19,9 +23,10 @@ function mostWordsEndWith(text){
       } // End of if
     } // End of Else
   } // End of forIn loop
-  return char+": "+counter;
+  result.letter = char;
+  result.letterCount = counter;
+  return result;
 } // End of mostWordsEndWith
 const assert = require('assert');
 var text = 'Down by the river there is a man that quiver and shiver, but he needs to deliver a packet that he think is a big racket and a packet of of gum.'
-//console.log(text);
-assert.equal(mostWordsEndWith(text),'t: 6');
+assert.deepEqual(mostWordsEndWith(text),{ letter: 't', letterCount: 6 });
