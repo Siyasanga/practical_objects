@@ -17,4 +17,6 @@ var shoppingList = [
     { itemName : 'Cheese', price : 23.00 },
     { itemName : 'Melrose', price : 27.50 }
 ];
-console.log(findItemsOver(shoppingList,23));
+const assert = require('assert');
+var result = findItemsOver(shoppingList,23);
+assert.deepEqual(result,[{ itemName : 'Bread', price : 24.00 },{ itemName : 'Melrose', price : 27.50 }])
