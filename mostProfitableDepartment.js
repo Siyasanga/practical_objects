@@ -42,8 +42,4 @@ var salesData = [
     {department : 'carpentry', sales : 16109, day : 'Friday'},
 ];
 const assert = require('assert');
-console.log(mostProfitableDepartment(salesData));
-// Next we get the most profitable department.
-// assert.equal(mostProfitableDepartment(salesData)['department'],'outdoor');
-// Next we get the most profitable day.
-// assert.equal(mostProfitableDepartment(salesData)['day'],'Thursday');
+assert.equal(mostProfitableDepartment(salesData),'outdoor: R42525');
